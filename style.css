@@ -1,0 +1,10 @@
+td.header {background: #ccccff; alignment: center}
+td.smallheader {background: #ccccff; alignment: center; font-size: small}
+td.label {background: #cccccc; alignment: right}
+td.input {background: #ffffff; alignment: left}
+
+td.layout {background: transparent}
+td {background: #eeeeee}
+
+//div.hideable {display: none}
+
