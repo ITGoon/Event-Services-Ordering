@@ -1,13 +1,13 @@
--- MySQL dump 10.13  Distrib 5.5.58, for debian-linux-gnu (i686)
+-- MySQL dump 10.16  Distrib 10.1.37-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: lineorder_production
 -- ------------------------------------------------------
--- Server version	5.5.58-0+deb8u1
+-- Server version	10.1.37-MariaDB-0+deb9u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -29,8 +29,17 @@ CREATE TABLE `events` (
   `end_date` date DEFAULT NULL,
   `deleted` tinyint(4) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=90 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=92 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `events`
+--
+
+LOCK TABLES `events` WRITE;
+/*!40000 ALTER TABLE `events` DISABLE KEYS */;
+/*!40000 ALTER TABLE `events` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `order_altercost`
@@ -49,6 +58,15 @@ CREATE TABLE `order_altercost` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `order_altercost`
+--
+
+LOCK TABLES `order_altercost` WRITE;
+/*!40000 ALTER TABLE `order_altercost` DISABLE KEYS */;
+/*!40000 ALTER TABLE `order_altercost` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `order_lineitems`
 --
 
@@ -62,6 +80,15 @@ CREATE TABLE `order_lineitems` (
   `cost` decimal(10,0) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `order_lineitems`
+--
+
+LOCK TABLES `order_lineitems` WRITE;
+/*!40000 ALTER TABLE `order_lineitems` DISABLE KEYS */;
+/*!40000 ALTER TABLE `order_lineitems` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `order_notes`
@@ -79,6 +106,15 @@ CREATE TABLE `order_notes` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `order_notes`
+--
+
+LOCK TABLES `order_notes` WRITE;
+/*!40000 ALTER TABLE `order_notes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `order_notes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `order_status`
 --
 
@@ -94,6 +130,15 @@ CREATE TABLE `order_status` (
   PRIMARY KEY (`orderid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `order_status`
+--
+
+LOCK TABLES `order_status` WRITE;
+/*!40000 ALTER TABLE `order_status` DISABLE KEYS */;
+/*!40000 ALTER TABLE `order_status` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `orders`
@@ -131,6 +176,15 @@ CREATE TABLE `orders` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `orders`
+--
+
+LOCK TABLES `orders` WRITE;
+/*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+/*!40000 ALTER TABLE `orders` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `orders_archive`
 --
 
@@ -166,6 +220,15 @@ CREATE TABLE `orders_archive` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `orders_archive`
+--
+
+LOCK TABLES `orders_archive` WRITE;
+/*!40000 ALTER TABLE `orders_archive` DISABLE KEYS */;
+/*!40000 ALTER TABLE `orders_archive` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `service_categories`
 --
 
@@ -178,8 +241,18 @@ CREATE TABLE `service_categories` (
   `deleted` tinyint(1) DEFAULT '0',
   `recipients` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `service_categories`
+--
+
+LOCK TABLES `service_categories` WRITE;
+/*!40000 ALTER TABLE `service_categories` DISABLE KEYS */;
+INSERT INTO `service_categories` VALUES (11,'Super DANK',1,NULL);
+/*!40000 ALTER TABLE `service_categories` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `services`
@@ -196,8 +269,18 @@ CREATE TABLE `services` (
   `addon` smallint(6) DEFAULT NULL,
   `deleted` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `services`
+--
+
+LOCK TABLES `services` WRITE;
+/*!40000 ALTER TABLE `services` DISABLE KEYS */;
+INSERT INTO `services` VALUES (23,'Extra Dank',100,11,0,1);
+/*!40000 ALTER TABLE `services` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `statustypes`
@@ -214,6 +297,15 @@ CREATE TABLE `statustypes` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `statustypes`
+--
+
+LOCK TABLES `statustypes` WRITE;
+/*!40000 ALTER TABLE `statustypes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `statustypes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `users`
 --
 
@@ -226,8 +318,18 @@ CREATE TABLE `users` (
   `password` char(41) DEFAULT NULL,
   `userlevel` smallint(6) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'initialize','*81BB39075BDAA57165C6A659AE72518F70F390CD',3);
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `visitor_info`
@@ -253,6 +355,15 @@ CREATE TABLE `visitor_info` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `visitor_info`
+--
+
+LOCK TABLES `visitor_info` WRITE;
+/*!40000 ALTER TABLE `visitor_info` DISABLE KEYS */;
+/*!40000 ALTER TABLE `visitor_info` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -263,4 +374,4 @@ CREATE TABLE `visitor_info` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-01-26 19:44:21
+-- Dump completed on 2019-01-29 22:56:43
