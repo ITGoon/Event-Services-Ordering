@@ -4,22 +4,23 @@ This is an event services ordering website written in PHP NOT BY ME, it was writ
 Jan 26 2019:<br>
 I have not done a test run of this distributable version but I will do it to confirm it can be easily setup.
 
+Example:
+![alt text](https://github.com/ITGoon/Event-Services-Ordering/blob/master/Example.png)
+
 
 # Requirements
 - MySQL 5.5 (Though 5.7 should work)
-- PHP 5.6 (Requires CLI, FPM, JSON, ADODB, readline, and MySQL PHP 5.6 packages)
+- PHP 5.6 (Requires CLI, FPM, JSON, ADODB, readline, and MySQL PHP 5.6 extensions)
 - Apache 2.4 (Though Nginx would work with some tweaks)
-- PHP mhash extension
-
 
 # Setup
 Once your LAMP server is setup with the above requirements then you can do the following.
 1) To get started create a user in mysql called eventservices and set a password for it
 2) Create a database called lineorder_production
-3) Importal the lineorder_production.sql file in the Database folder into that database
-4) In your php.ini for apache2 (Or Nginx) make sure you set the following:
-	- short_open_tag = on
-3) Move the eventservices folder to your web root 
+3) Import the lineorder_production.sql file into that database
+4) In your php.ini for apache2 (Or Nginx) make sure you change the following from off to on:
+	- short_open_tag = On
+3) Download all files from this repo into a directory inside your web root you'll need to create called eventservices
 
 
 
@@ -86,17 +87,6 @@ AND
 ```
  <input type="hidden" name="x_relay_url" value="http://YOUR_DOMAIN_HERE/eventservices/completeOrder.php" />
 ```
- 
- 
- 
-## test.php
-Not a critical file but go ahead and update it by
-adding your eventservices mysql user's password 
-```
-$dbpass = 'PASSWORD';
-```
-
-
 
 ## verifyorder.php
 This line is specific to the location I use this ordering site, feel free to change for your needs.
