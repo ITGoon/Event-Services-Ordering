@@ -27,8 +27,10 @@ service apache2 restart
 
 2) Copy the folder containing all of the files from github to the web root (Usually /var/www/html/) and rename to eventservices. I'll put the git command here if you insist....
 
-3) Now we'll setup the databse in SQL
-Login to sql with: mysql -u root -p
+3) Now we'll setup the databse in SQL. Login to sql with: 
+```
+mysql -u root -p
+```
 Password will be your root password
 You will now be at a sql prompt.
 Run this to create the database: 
