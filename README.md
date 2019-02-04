@@ -10,7 +10,7 @@ This is an event services ordering website written in PHP NOT BY ME, it was writ
 - Apache 2.4 (Though Nginx would work)
 
 # Environment Setup
-Setup your LAMP and install Event Services Ordering. I am using Debian 9, but you can alter any of these instructions for another distribution.
+Setup your LAMP and install the Event Services site. I am using Debian 9, but you can alter any of these instructions for another distribution.
 
 1) First lets install Apache, MySQL (MariaDB), and PHP 5.6 in Debian.
 ```
