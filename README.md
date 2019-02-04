@@ -76,7 +76,7 @@ service apache2 restart
 Now let's edit some important files. See next section.
 
 # Files to Change
-We need to make some changes in the files that are part of the event service site.
+We need to make some changes in the files that are part of this event services site.
 ## connection.inc.php
 Set this to the password used above for the mysql user eventservices 
 ```
