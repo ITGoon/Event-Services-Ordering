@@ -146,7 +146,7 @@ This line is specific to the location I use this ordering site, feel free to cha
 2) At the bottom of the page click login, login with initialize / logitin
 3) Create a new user for yourself with Admin permissions under User List > Add User
 4) Logout and login as that new user then delete the user named initialize. 
-5) Begin configuring your events and services. For event dates use the format YEAR-MO-DY
+5) Begin configuring your events and services. For event dates use the format YEAR-MO-DY <br>
 Example of a some services and service categories:
 ![alt text](https://github.com/ITGoon/Event-Services-Ordering/blob/master/Example.png)
 
@@ -160,7 +160,9 @@ rm /var/www/html/eventservices/UnlistedExample.PNG
 ```
 
 # OPTIONAL: Configure Unlisted Event Option
-This option allows your customers to put in a custom event name and date.
+This option allows your customers to put in a custom event name and date. Here is an example of what it looks like:
+![alt text](https://github.com/ITGoon/Event-Services-Ordering/blob/master/UnlistedExample.PNG)
+
 1) First log into sql: 
 ```
 mysql -u root -p
