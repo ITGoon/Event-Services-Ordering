@@ -1,6 +1,13 @@
 # About
 This is an event services ordering website written in PHP NOT BY ME, it was written by my predecessor for a client I do a lot of work for. I have modified it slightly to keep it running on a Debian server as I upgraded it from version 6 to version 9. 
 <br><br>
+## Features:
+- User management with three levels of permissions
+    -> Admin can edit all including users 
+    -> User can only view and update orders
+    -> Unsure of what Order Admin can do right now
+- Associate email addresses with certain service categories so an email is sent when services in that category are ordered
+- Mark orders as assigned, partially complete, complete, and decommisioned
 
 
 # Requirements
