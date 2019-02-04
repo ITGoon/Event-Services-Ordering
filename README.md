@@ -146,8 +146,8 @@ This line is specific to the location I use this ordering site, feel free to cha
 2) At the bottom of the page click login, login with initialize / logitin
 3) Create a new user for yourself with Admin permissions under User List > Add User
 4) Logout and login as that new user then delete the user named initialize. 
-5) Begin configuring your events and services. For event dates use the format YEAR-MO-DY <br>
-Example of a some services and service categories:
+5) Begin configuring your events and services. For event dates use the format YEAR-MO-DY <br><br>
+Example of some services and service categories:
 ![alt text](https://github.com/ITGoon/Event-Services-Ordering/blob/master/Example.png)
 
 # Cleanup
