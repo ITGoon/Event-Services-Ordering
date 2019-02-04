@@ -7,7 +7,7 @@ This is an event services ordering website written in PHP NOT BY ME, it was writ
 - OS: Anything that can run MySQL, PHP 5.6, and some sort of web server that is compatible with PHP 5.6
 - MySQL 5.5 (5.7 should work, MariaDB does work)
 - PHP 5.6 (Requires CLI, FPM, JSON, ADODB, readline, and MySQL PHP 5.6 extensions)
-- Apache 2.4 (Though Nginx would work)
+- Apache 2.4 (Though Nginx or Lighttpd would work)
 
 # Environment Setup
 Setup your LAMP and install the Event Services site. I am using Debian 9, but you can alter any of these instructions for another distribution.
