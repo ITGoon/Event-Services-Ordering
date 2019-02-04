@@ -167,15 +167,15 @@ This option allows your customers to put in a custom event name and date. Here i
 ```
 mysql -u root -p
 ```
-2) Next lets select our databse.
+2) Next lets select our database.
 ```
 USE lineorder_production;
 ```
-3) To add this feature the Unlist Event feature let's run this SQL query:
+3) To add this feature let's run this SQL query:
 ```
 INSERT INTO events (id, name, start_date, end_date, deleted) VALUES ('1', 'Unlisted Event', NULL, NULL, '0');
 ```
-This adds an event entry in the database with NULL values for the dates, this will allow a text box to appear when Unlised Event is selected and the customer and put in their event name.
+This adds an event entry in the database with NULL values for the dates, this will allow a pair of text boxes to appear when Unlisted Event is selected and the customer can put in their event name.
 
 To remove this feature run the following SQL query: 
 ```
