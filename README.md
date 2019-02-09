@@ -75,7 +75,7 @@ mysql -u root -p lineorder_production < /var/www/html/eventservices/lineorder_pr
 chown -R www-data:www-data /var/www/html/eventservices
 ```
 
-6) Now edit your php.ini to allow short open tags, you're looking for the line short_open_tag = Off. Chamge it to On. Then restart Apache.
+6) Now edit your php.ini to allow short open tags, you're looking for the line short_open_tag = Off. Change it to On. Then restart Apache.
 ```
 nano /etc/php/5.6/apache2/php.ini
 service apache2 restart
@@ -143,7 +143,7 @@ AND
 ```
 
 ## verifyorder.php
-This line is specific to the location I use this ordering site, feel free to change for your needs.
+This line is specific to the location I use this ordering site, feel free to change for your needs or remove it.
 ```
 <p />If your order includes more than 5 telephone lines, please email lineorders@YOUR_DOMAIN to inquire about special pricing.
 ```
