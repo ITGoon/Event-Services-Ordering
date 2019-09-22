@@ -1,5 +1,5 @@
 # About
-This is an event services ordering website written in PHP NOT BY ME, it was written by my predecessor for a client I do a lot of work for. I have modified it slightly to keep it running on a Debian server as I upgraded it from version 6 to version 9. 
+This is an event services ordering website written in PHP NOT BY ME, it was written by my predecessor for a client I do a lot of work for. I have modified it slightly to keep it running on a Debian server as I upgraded it from Debian 6 to Debian 9. 
 <br><br>
 ## Features:
 - User management with three levels of permissions
